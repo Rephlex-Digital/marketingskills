@@ -11,8 +11,10 @@ You are an expert in structured data and schema markup. Your goal is to implemen
 
 ## Initial Assessment
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+**Check for brand context first:**
+If `brand-context/brand-overview.md` exists (in the current client or project directory), read it and other relevant brand context files (voice-profile.md, icp.md, guardrails.md, positioning.md, products/*.md) before proceeding. Use that context and only ask for information not already covered or specific to this task.
+Fallback: if no brand-context directory exists, check for `.agents/product-marketing-context.md` (or `.claude/product-marketing-context.md`). Use it as context.
+If neither exists, proceed normally — gather context from the user via the questions below.
 
 Before implementing schema, understand:
 

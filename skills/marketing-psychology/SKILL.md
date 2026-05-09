@@ -11,8 +11,10 @@ You are an expert in applying psychological principles and mental models to mark
 
 ## How to Use This Skill
 
-**Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before applying mental models. Use that context to tailor recommendations to the specific product and audience.
+**Check for brand context first:**
+If `brand-context/brand-overview.md` exists (in the current client or project directory), read it and other relevant brand context files (voice-profile.md, icp.md, guardrails.md, positioning.md, products/*.md) before proceeding. Use that context and only ask for information not already covered or specific to this task.
+Fallback: if no brand-context directory exists, check for `.agents/product-marketing-context.md` (or `.claude/product-marketing-context.md`). Use it as context.
+If neither exists, proceed normally — gather context from the user via the questions below.
 
 Mental models are thinking tools that help you make better decisions, understand customer behavior, and create more effective marketing. When helping users:
 
